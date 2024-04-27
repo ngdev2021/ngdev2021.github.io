@@ -1,0 +1,65 @@
+/* import Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+@apply flex items-center justify-between w-full top-0 z-10 h-[5.4rem] p-[3.2rem]
+}
+
+.nav_link {
+    @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent  hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-300
+}
+
+.car_section {
+    @apply w-full h-screen relative
+}
+
+.car_image {
+    @apply w-full h-full object-cover
+}
+
+.car_details {
+    @apply absolute top-[20%] left-[50%] text-center
+}
+
+.transform_50 {
+    @apply -translate-x-1/2 -translate-y-1/2
+}
+
+
+.model_name {
+    @apply text-5xl font-semibold text-[#393c41]
+}
+
+.tagline {
+    @apply text-2xl text-[#4c4d51] mt-[0.8rem]
+}
+
+.car_buttons {
+    @apply absolute top-[85%] left-[50%] flex items-center justify-center flex flex-col lg:flex-row
+}
+
+.btn {
+    @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.2rem] w-[25.6rem] h-16 bg-opacity-80
+}
+
+.inventory {
+    @apply text-[#393c41] bg-white bg-opacity-60 lg:ml-8
+}
+
+.down_svg {
+    @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce
+}
+.footer {
+    @apply w-full h-[5.4rem] bg-[#181b21] text-white text-center flex items-center justify-center 
+
+}
